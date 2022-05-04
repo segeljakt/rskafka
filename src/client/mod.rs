@@ -103,7 +103,7 @@ impl std::fmt::Debug for ClientBuilder {
 /// [`ControllerClient`] and [`PartitionClient`].
 ///
 /// Must be constructed using [`ClientBuilder`].
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Client {
     brokers: Arc<BrokerConnector>,
 }
